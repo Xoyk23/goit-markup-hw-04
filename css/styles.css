@@ -160,6 +160,8 @@ p {
   text-align: center;
 }
 
+/* Картинка Герой */
+
 .overlay {
   min-width: 1600px;
   height: 600px;
@@ -178,18 +180,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* .hero .overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8)),
-    url('../images/hero-image.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
 
 .hero .button {
   padding: 10px 32px;
