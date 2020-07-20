@@ -24,6 +24,7 @@
   --socials-main-color: #afb1b8;
   --primary-background-color: #e5e5e5;
   --portfolio-card-border-color: #eeeeee;
+  --hero-gradient-color: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -156,12 +157,43 @@ p {
 /* Секция Герой */
 
 .hero {
-  padding-top: 200px;
   padding-bottom: 200px;
 
   text-align: center;
-  background-color: var(--text-background-color);
+  /* background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8)),
+    url('../images/hero-image.jpg'); */
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  outline: 1px solid black;
+
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient-color),
+      var(--hero-gradient-color)
+    ),
+    url('../images/hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .hero .overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8)),
+    url('../images/hero-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
 
 .hero .button {
   padding: 10px 32px;
@@ -172,6 +204,7 @@ p {
 }
 
 .hero-title {
+  padding-top: 200px;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
