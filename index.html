@@ -16,8 +16,8 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header class="head">
-      <div class="container">
+    <header class="head main-no-border">
+      <div class="container section">
         <nav class="main-nav">
           <a href="./index.html" class="logo-head"
             ><span class="logo-decoration">Web</span> Studio</a
@@ -42,17 +42,15 @@
           <address class="contacts list">
             <ul class="contacts-list list">
               <li class="contacts-list-item">
-                <img src="./images/envelope.svg" alt="" />
                 <a
+                  class="contacts-links"
                   href="mailto:info@devstudio.com"
                   lang="en"
-                  class="contacts-links"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="contacts-list-item">
-                <img src="./images/smartphone.svg" alt="" />
-                <a href="tel:=380961111111" class="contacts-links"
+                <a class="contacts-links" href="tel:=380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -74,42 +72,32 @@
       </section>
 
       <!-- Секция преимуществ -->
-      <section class="advantages-section">
+      <section class="section advantages">
         <div class="container">
           <h2 class="subject">Наши Преимущества</h2>
-          <ul class="advantages list">
-            <li class="advantages-item">
-              <img src="./images/features/antenna1.svg" alt="иконка_антенны" />
+          <ul class="advantages-list list">
+            <li class="advantages-item icon-antenna">
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="advantages-item">
-              <img src="./images/features/clock1.svg" alt="иконка_часов" />
+            <li class="advantages-item icon-clock">
               <h3 class="advantages-title">Пунктуальность</h3>
               <p class="advantages-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantages-item">
-              <img
-                src="./images/features/diagram1.svg"
-                alt="иконка_диаграммы"
-              />
+            <li class="advantages-item icon-diagram">
               <h3 class="advantages-title">Планирование</h3>
               <p class="advantages-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages-item">
-              <img
-                src="./images/features/astronaut1.svg"
-                alt="иконка_астронавта"
-              />
+            <li class="advantages-item icon-astronaut">
               <h3 class="advantages-title">Современные технологии</h3>
               <p class="advantages-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -120,7 +108,7 @@
         </div>
       </section>
       <!-- Секций чем мы занимаемся -->
-      <section class="job">
+      <section class="job section">
         <div class="container">
           <h2 class="job-title">Чем мы занимаемся</h2>
           <ul class="job-list list">
@@ -155,7 +143,7 @@
         </div>
       </section>
       <!-- Секция наша команда -->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-main-title">Наша команда</h2>
           <ul class="team-list list">
@@ -315,7 +303,7 @@
         </div>
       </section>
       <!-- Секция постоянные клиенты -->
-      <section class="clients">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
