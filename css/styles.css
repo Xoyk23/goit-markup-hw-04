@@ -166,11 +166,19 @@ header .section {
   content: '';
 
   width: 16px;
-  height: 11.2px;
+  height: 15px;
   margin-right: 10px;
 
-  /* background-size: contain;
-  background-repeat: no-repeat; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smartphone::before {
+  background-image: url('../images/smartphone.svg');
+}
+
+.evenlope::before {
   background-image: url('../images/envelope.svg');
 }
 
@@ -403,13 +411,27 @@ header .section {
 }
 /* Соц сети */
 
-.team-socials:not(:last-child) {
+.team-socials-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-socials {
   display: flex;
   justify-content: center;
+}
+
+.team-socials-item-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-instagram {
+  background-image: url('../images/socials/instagram.svg');
 }
 
 .team-socials a {
