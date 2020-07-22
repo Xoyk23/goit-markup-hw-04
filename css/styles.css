@@ -506,16 +506,26 @@ header .section {
 
 .footer {
   background: var(--footer-background-color);
-  padding-bottom: 60px;
-  padding-top: 60px;
 }
 
-.footer .container {
+footer div {
+  vertical-align: top;
+}
+
+footer div.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
   display: flex;
+  align-items: baseline;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .footer-contacts-block {
-  width: 231px;
+  /* width: 231px; */
   margin-right: 69px;
 }
 
@@ -554,7 +564,7 @@ header .section {
 }
 
 .join_us {
-  width: 206px;
+  /* width: 206px; */
   margin-right: 94px;
 }
 
@@ -579,6 +589,27 @@ header .section {
   margin-right: 10px;
 }
 
+/* иконки соц-сетей */
+.footer-socials-item-link {
+  display: block;
+  content: '';
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-instagram-footer {
+  background-image: url('../images/socials/insta_footer.svg');
+}
+.icon-twitter-footer {
+  background-image: url('../images/socials/twitter_footer.svg');
+}
+.icon-facebook-footer {
+  background-image: url('../images/socials/facebook_footer.svg');
+}
 /* Оформление портфолио */
 
 .portfolio-item-img {
