@@ -49,7 +49,7 @@ p {
 }
 /* обнуление стилей */
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -434,9 +434,24 @@ header .section {
   background-image: url('../images/socials/instagram.svg');
 }
 
+.icon-twitter {
+  background-image: url('../images/socials/twitter.svg');
+}
+
+.icon-facebook {
+  background-image: url('../images/socials/facebook.svg');
+  background-position: center;
+}
+
+.icon-linked {
+  background-image: url('../images/socials/in.svg');
+  background-position: center;
+}
+
 .team-socials a {
   color: var(--socials-main-color);
 }
+
 /* Секция постоянные клиенты */
 
 .container .clients {
