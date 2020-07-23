@@ -162,24 +162,14 @@ header .section {
   align-items: center;
 }
 
-.contacts-links::before {
-  content: '';
-
-  width: 16px;
-  height: 15px;
+.icon-smartphone {
   margin-right: 10px;
-
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: var(--primary-text-color);
 }
 
-.smartphone::before {
-  background-image: url('../images/smartphone.svg');
-}
-
-.evenlope::before {
-  background-image: url('../images/envelope.svg');
+.icon-envelope {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 /* Оформление интерактивных элементов */
@@ -187,8 +177,13 @@ header .section {
 .menunav .menunav-links:focus,
 .menunav .menunav-links.current,
 .contacts .contacts-links:focus,
-.contacts .contacts-links:hover {
+.contacts .contacts-links:hover,
+.contacts-links:hover .icon-smartphone,
+.contacts-links:focus .icon-smartphone,
+.contacts-links:hover .icon-envelope,
+.contacts-links:focus .icon-envelope {
   color: var(--accent-color);
+  fill: var(--accent-color);
   position: relative;
 }
 
