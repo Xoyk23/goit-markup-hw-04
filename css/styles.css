@@ -187,6 +187,11 @@ header .section {
   position: relative;
 }
 
+.team-socials-item-link:hover,
+.team-socials-item-link:focus {
+  background-color: var(--accent-color);
+}
+
 /* линия под активной страницей */
 
 /* оформление списка контактов */
@@ -270,32 +275,6 @@ header .section {
 .icon-advantages {
   width: 70px;
   height: 70px;
-}
-
-/* .advantages-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: var(--secondary-white-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-
-  margin-bottom: 30px;
-} */
-
-.icon-antenna::before {
-  background-image: url('../images/features/antenna1.svg');
-}
-.icon-clock::before {
-  background-image: url('../images/features/clock1.svg');
-}
-.icon-diagram::before {
-  background-image: url('../images/features/diagram1.svg');
-}
-
-.icon-astronaut::before {
-  background-image: url('../images/features/astronaut1.svg');
 }
 
 .advantages-item:not(:last-child) {
@@ -430,20 +409,32 @@ header .section {
 }
 
 .team-socials-item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--accent-color);
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--primary-white-color);
+  /* background-position: center;
+  background-repeat: no-repeat; */
 }
 
-.icon-instagram {
+.icon-socials-team {
+  width: 20px;
+  height: 20px;
+  fill: var(--socials-main-color);
+}
+
+.team-socials-item-link:hover .icon-socials-team {
+  fill: var(--primary-white-color);
+}
+
+/* .icon-instagram {
   background-image: url('../images/socials/instagram.svg');
-}
+} */
 
-.icon-twitter {
+/* .icon-twitter {
   background-image: url('../images/socials/twitter.svg');
 }
 
@@ -455,7 +446,7 @@ header .section {
 .icon-linked {
   background-image: url('../images/socials/in.svg');
   background-position: center;
-}
+} */
 
 .team-socials a {
   color: var(--socials-main-color);
