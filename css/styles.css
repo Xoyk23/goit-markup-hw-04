@@ -258,7 +258,21 @@ header .section {
   width: 270px;
 }
 
-.advantages-item::before {
+.advantages-util {
+  display: flex;
+  height: 120px;
+  background-color: var(--secondary-white-color);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-advantages {
+  width: 70px;
+  height: 70px;
+}
+
+/* .advantages-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -268,7 +282,7 @@ header .section {
   border-radius: 4px;
 
   margin-bottom: 30px;
-}
+} */
 
 .icon-antenna::before {
   background-image: url('../images/features/antenna1.svg');
