@@ -271,6 +271,8 @@ header .section {
   background-color: var(--secondary-white-color);
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+
   margin-bottom: 30px;
 }
 
@@ -596,6 +598,14 @@ footer div.section {
   fill: var(--primary-white-color);
 }
 
+.icon-icon_send {
+  /* align-self: flex-end; */
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
 /* Оформление портфолио */
 
 .portfolio-item-img {
@@ -714,17 +724,22 @@ b {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
 .button-footer {
+  display: inline-flex;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 28px;
 
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
   background-color: var(--accent-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
