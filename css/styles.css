@@ -67,16 +67,16 @@ img {
 
 /* Контейнер */
 .container {
-  max-width: var(--max-width);
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* cекция */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
 
   margin-left: auto;
   margin-right: auto;
@@ -204,14 +204,9 @@ header .section {
 /* Оформление основной страницы */
 /* Секция Герой */
 
-.hero {
-  text-align: center;
-}
-
 /* Картинка Герой */
-
-.overlay {
-  min-width: 1600px;
+.hero {
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -227,6 +222,13 @@ header .section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  text-align: center;
+}
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .button {
@@ -239,7 +241,7 @@ header .section {
 }
 
 .hero-title {
-  padding-top: 200px;
+  /* padding-top: 200px; */
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -462,8 +464,13 @@ header .section {
 }
 
 .clients-list-item:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
+}
+
+.clients-list-item:hover .client_logo,
+.clients-list-item:focus .client_logo {
+  fill: var(--accent-color);
 }
 
 .clients-list-item:not(:last-child) {
@@ -619,8 +626,8 @@ footer div.section {
 .portfolio-section {
   padding-top: 93px;
   padding-bottom: 94px;
-  padding-right: 15px;
-  padding-left: 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
 }
 
 .portfolio {
